@@ -21,11 +21,13 @@ variable "env" {
   description = "Development environment config"
 
   type = object({
+    environment    = string
     name           = string
     network_prefix = string
   })
 
   default = {
+    environment    = "dev"
     name           = "terraform-course-dev"
     network_prefix = "10.0"
   }
