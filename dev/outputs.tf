@@ -1,3 +1,3 @@
 output "alb_dns" {
-    value = module.test.alb_dns
+    value = module.dev.alb_dns
 }
